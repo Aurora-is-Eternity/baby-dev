@@ -1,0 +1,39 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;   
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+contract HansenVoting is ERC20, Ownable {
+    string[3] public candidates;
+    mapping(string => uint256) public votes;
+    mapping(address => bool) public hasVoted;
+    event Voted(address indexed voter, string candidate);
+    constructor(
+        string memory candidate1,
+        string memory candidate2,
+        string memory candidate3
+    ) ERC20("VotingToken", "VOTE") Ownable(msg.sender) {
+        _mint(msg.sender, 1000 * 10 ** decimals());
+        candidates[0] = candidate1;
+        candidates[1] = candidate2;
+        candidates[2] = candidate3;
+    }
+    function vote(string memory candidate) external {
+        require(!hasVoted[msg.sender], unicode"你已经投过票了");
+        require(balanceOf(msg.sender) > 0, unicode"必须持有代币才能投票");
+        require(isValidCandidate(candidate), unicode"无效的候选人");
+        votes[candidate]++;
+        hasVoted[msg.sender] = true;
+        emit Voted(msg.sender, candidate);
+    }
+    function getCandidates() external view returns (string[3] memory) {
+        return candidates;
+    }
+    function isValidCandidate(string memory candidate) internal view returns (bool) {
+        for (uint i = 0; i < candidates.length; i++) {
+            if (keccak256(bytes(candidates[i])) == keccak256(bytes(candidate))) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
