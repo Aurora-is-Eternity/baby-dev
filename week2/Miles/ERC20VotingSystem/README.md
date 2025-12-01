@@ -1,0 +1,4 @@
+- 合约名称:votingSystem
+- contract address:0x5802016Bc9976C6f63D6170157adAeA1924586c1
+- transaction hash:0xd27b21b7e9f7997e313a6b91c3685878e27364c189fcfebbeee3f090e951101f
+- 主要说明:这是一个基于ERC20的去中心化投票系统,用户需持有至少一个与该合约关联的代币才能进行投票.通过`hasVoted`,限制了每个voter只有一次投票机会;合约的owner拥有添加候选人的权利,通过`addcandidate`;所有投票结果可以通过查询接口`getVotes()`,来查询;所有的投票操作都通过了`voteRecorded`来记录事件

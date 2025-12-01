@@ -1,0 +1,4 @@
+- 合约名称:UpgradedToken
+- contract address:0x1482717Eb2eA8Ecd81d2d8C403CaCF87AcF04927
+- transaction hash:0x03baccc9a1b597864b0a607dcbb474571c13a3e3ea44f08b3e6e3122fc5c65fa
+- 主要说明:这是一个基于openzeppelin库实现的,具有扩展功能的ERC20;通过继承ERC20Capped实现了最大供应量的限制为1000万个;合约的owner可以通过`mint`函数来铸造代币;通过继承ERC20Burnable库,持有者可以销毁自己的代币;通过继承了Ownable来保护mint函数,确保只有owner可以使用

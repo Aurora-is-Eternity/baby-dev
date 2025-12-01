@@ -1,0 +1,9 @@
+token address：0x99fD7458aFD3DF30cF9dB52ed6B8D304120a19Fa
+token hash：0x4942be75d880358cbd48aec9b18987637949325b96e92f85579f15386ff5ac11
+vote address:0xC70b9Ab9Dfc9FBc8D3B5e797209EC20C9389C38F
+vote hash：0x57f944566268427b35ec3a495b6f853e87ccadcc230c073d4f91accda8ec9989
+
+1.学习了ERc721及NFT的概念；
+2.学习了事件的写法；
+3.加深了对合约间交互编程的实践；
+4.用AI（DeepSeek，Qwen）对我的合约进行了审计，发现了许多漏洞，并修复了一部分漏洞，还有一些我还未理解其目的和修复方式；
