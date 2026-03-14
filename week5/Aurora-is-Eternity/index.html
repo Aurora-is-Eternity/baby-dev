@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>learing html</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="swap-container">
+            <div class="header">Swap</div>
+            <div class="intput">
+                <input type="number" placeholder="0.0" id="A">
+                <span  class="token-symbol" id="tokenA">ETH</span>
+            </div>
+            <div class="switch1" id="switch"> 
+                ⇅
+            </div>
+            <div class="swap">
+                <input type="number" placeholder="0.0" id="B">
+                <span class="token-symbol" id="tokenB">USDT</span>
+            </div>
+            <div class="turnswap">
+                <button>Swap</button>
+                <span>汇率 1 ETH = 3500 USDT</span>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
