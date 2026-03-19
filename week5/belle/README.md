@@ -19,4 +19,5 @@
 - JavaScript (DOM 操作、事件监听)
 
 ## 部署地址
-[如果部署到 GitHub Pages 或其他平台，填写地址]
+https://belle-k.github.io/baby-dev/week5/belle/index.html
+
