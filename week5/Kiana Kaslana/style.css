@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f3f5f7;
+}
+
+.main {
+  margin: 200px auto;
+  background-color: #ffff;
+  width: 360px;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 4px 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.head {
+  height: 24px;
+  margin-bottom: 12px;
+}
+
+.head h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.ETH {
+  display: flex;
+  background-color: #f3f5f7;
+  border-radius: 12px;
+}
+
+.ETH input {
+  margin: 6px;
+  outline: none;
+  height: 32px;
+  padding: 8px;
+  width: 320px;
+  border-style: none;
+  background-color: #f3f5f7;
+
+}
+
+.ETH p {
+  border-radius: 4px;
+  width: 36px;
+  padding: 0, 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  margin: 6px;
+
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.turn p {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.USDT {
+  display: flex;
+  background-color: #f3f5f7;
+  border-radius: 12px;
+}
+
+.USDT input {
+  margin: 6px;
+  outline: none;
+  height: 32px;
+  padding: 8px;
+  width: 320px;
+  border-style: none;
+  background-color: #f3f5f7;
+
+}
+
+.USDT p {
+  border-radius: 4px;
+  width: 36px;
+  padding: 0, 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  margin: 6px;
+
+}
+
+.exchange {
+  margin-top: 8px;
+  padding-left: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exchange p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.swap {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.swap button {
+  width: 100%;
+  height: 56px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: #00a4ff;
+  color: #ffff;
+}
+
+.swap button:hover {
+  opacity: 0.9;
+}

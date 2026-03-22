@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWAP 计算器</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="head">
+      <h3>SWAP</h3>
+    </div>
+
+    <div class="ETH">
+      <input type="number" id="input-amount" placeholder="0.0" step="0.1">
+      <p id="tokenA">ETH</p>
+    </div>
+
+    <div class="turn" id="switch">
+      <p>↑↓</p>
+    </div>
+
+    <div class="USDT">
+      <input type="number" id="output-amount" placeholder="0.0" step="0.1" disabled>
+      <p id="tokenB">USDT</p>
+    </div>
+
+    <div class="exchange">
+      <p>汇率</p>
+      <p id="price">1 ETH = 3500 USDT</p>
+    </div>
+
+    <div class="swap">
+      <button>Swap</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

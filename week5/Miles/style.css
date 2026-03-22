@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.swap {
+    background: white;
+    width: 360px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize; 
+}
+
+.btc, .usdt {
+    background: #f8fafd;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    width: 70%;
+    outline: none; 
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}
+
+.switch {
+    text-align: center;
+    margin: -10px 0; 
+}
+
+#switch-btn {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+#switch-btn:hover {
+    background: #f0f0f0;
+}
+
+.exchange-rate {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+    padding: 15px 5px;
+}
+
+.swap-btn button {
+    width: 100%;
+    background: #2172e5;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.swap-btn button:hover {
+    background: #1961c9;
+}
+
+
